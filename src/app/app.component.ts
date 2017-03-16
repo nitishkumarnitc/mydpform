@@ -29,6 +29,30 @@ export class AppComponent implements AfterViewInit{
       validation: [Validators.required]
     },
     {
+      type: 'select',
+      label: 'Favourite Food',
+      name: 'food',
+      options: ['Pizza', 'Hot Dogs', 'Knakworstje', 'Coffee'],
+      placeholder: 'Select an option',
+      validation: [Validators.required]
+    },
+    {
+      type: 'select',
+      label: 'Favourite Food',
+      name: 'food',
+      options: ['Pizza', 'Hot Dogs', 'Knakworstje', 'Coffee'],
+      placeholder: 'Select an option',
+      validation: [Validators.required]
+    },
+    {
+      type: 'select',
+      label: 'Favourite Food',
+      name: 'food',
+      options: ['Pizza', 'Hot Dogs', 'Knakworstje', 'Coffee'],
+      placeholder: 'Select an option',
+      validation: [Validators.required]
+    },
+    {
       label: 'Submit',
       name: 'submit',
       type: 'button'
@@ -45,7 +69,7 @@ export class AppComponent implements AfterViewInit{
     });
 
     this.form.setDisabled('submit', true);
-    this.form.setValue('name', 'Todd Motto');
+    this.form.setValue('name', 'Nitish Kumar');
   }
 
   submit(value: {[name: string]: any}) {
